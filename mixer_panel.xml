@@ -65,20 +65,9 @@
 
               <!--
               **********************************************
-              Slider- Crossfader
+              Slider- Crossfader (removed - always set to middle)
               **********************************************
               -->
-              <SliderComposed>
-                <TooltipId>crossfader</TooltipId>
-                <Handle>knob_crossfader.png</Handle>
-                <Slider>slider_crossfader.png</Slider>
-                <Pos>72,200</Pos>
-                <Horizontal>true</Horizontal>
-                <Connection>
-                  <ConfigKey>[Master],crossfader</ConfigKey>
-                  <EmitOnDownPress>false</EmitOnDownPress>
-                </Connection>
-              </SliderComposed>
 
               <!--
               ****************************************

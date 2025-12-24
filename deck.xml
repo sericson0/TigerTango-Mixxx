@@ -198,7 +198,7 @@
                                       <BindProperty>visible</BindProperty>
                                     </Connection>
                                   </WidgetGroup>
-                                  <Template src="skin:vinylcontrol.xml"/>
+                                  <!-- Vinyl control removed - scratching disabled, Spinny remains visible -->
                                 </Children>
                               </WidgetGroup>
 
@@ -300,6 +300,31 @@
                 <Size>52f,165f</Size>
                 <BackPath>style/style_bg_deck_right.png</BackPath>
                 <Children>
+                  <PushButton>
+                    <TooltipId>sync_reset_key</TooltipId>
+                    <NumberStates>2</NumberStates>
+                    <State>
+                      <Number>0</Number>
+                      <Pressed>skin:/btn/btn_sync_key_down.png</Pressed>
+                      <Unpressed>skin:/btn/btn_sync_key.png</Unpressed>
+                    </State>
+                    <State>
+                      <Number>1</Number>
+                      <Pressed>skin:/btn/btn_sync_key_overdown.png</Pressed>
+                      <Unpressed>skin:/btn/btn_sync_key_over.png</Unpressed>
+                    </State>
+                    <Pos>27,15</Pos>
+                    <Connection>
+                      <ConfigKey><Variable name="group"/>,sync_key</ConfigKey>
+                      <ButtonState>LeftButton</ButtonState>
+                    </Connection>
+                    <Connection>
+                      <ConfigKey><Variable name="group"/>,reset_key</ConfigKey>
+                      <ButtonState>RightButton</ButtonState>
+                    </Connection>
+                  </PushButton>
+
+
                   <WidgetGroup>
                     <Pos>3,30</Pos>
                     <Size>47f,26f</Size>
@@ -395,6 +420,45 @@
                     </Connection>
                   </SliderComposed>
 
+                  <!-- Pitch range indicators -->
+                  <RateRange>
+                    <TooltipId>rate_range_display</TooltipId>
+                    <ObjectName>RateDisplayTopPrefix</ObjectName>
+                    <Channel><Variable name="channum" /></Channel>
+                    <Position>Top</Position>
+                    <Display>prefix</Display>
+                    <Size>20f,-1me</Size>
+                    <Pos>0,62</Pos>
+                  </RateRange>
+                  <RateRange>
+                    <TooltipId>rate_range_display</TooltipId>
+                    <ObjectName>RateDisplayTopRate</ObjectName>
+                    <Channel><Variable name="channum" /></Channel>
+                    <Position>Top</Position>
+                    <Display>range</Display>
+                    <Size>20f,-1me</Size>
+                    <Pos>32,62</Pos>
+                  </RateRange>
+                  <RateRange>
+                    <TooltipId>rate_range_display</TooltipId>
+                    <ObjectName>RateDisplayBottomPrefix</ObjectName>
+                    <Channel><Variable name="channum" /></Channel>
+                    <Position>Bottom</Position>
+                    <Align>Bottom</Align>
+                    <Display>prefix</Display>
+                    <Size>20f,-1me</Size>
+                    <Pos>0,148</Pos>
+                  </RateRange>
+                  <RateRange>
+                    <TooltipId>rate_range_display</TooltipId>
+                    <ObjectName>RateDisplayBottomRate</ObjectName>
+                    <Channel><Variable name="channum" /></Channel>
+                    <Align>Bottom</Align>
+                    <Display>range</Display>
+                    <Size>20f,-1me</Size>
+                    <Pos>32,148</Pos>
+                  </RateRange>
+
                   <SliderComposed>
                     <TooltipId>rate</TooltipId>
                     <Handle>knob_pitch.png</Handle>
@@ -406,6 +470,48 @@
                       <EmitOnDownPress>false</EmitOnDownPress>
                     </Connection>
                   </SliderComposed>
+
+                  <PushButton>
+                    <TooltipId>rate_temp_up_rate_temp_up_small</TooltipId>
+                    <Size>10f,10f</Size>
+                    <NumberStates>1</NumberStates>
+                    <State>
+                      <Number>0</Number>
+                      <Text>►</Text>
+                    </State>
+                    <Pos>36,138</Pos>
+                    <Connection>
+                      <ConfigKey><Variable name="group"/>,rate_temp_up</ConfigKey>
+                      <EmitOnPressAndRelease>true</EmitOnPressAndRelease>
+                      <ButtonState>LeftButton</ButtonState>
+                    </Connection>
+                    <Connection>
+                      <ConfigKey><Variable name="group"/>,rate_temp_up_small</ConfigKey>
+                      <EmitOnPressAndRelease>true</EmitOnPressAndRelease>
+                      <ButtonState>RightButton</ButtonState>
+                    </Connection>
+                  </PushButton>
+
+                  <PushButton>
+                    <TooltipId>rate_temp_down_rate_temp_down_small</TooltipId>
+                    <Size>10f,10f</Size>
+                    <NumberStates>1</NumberStates>
+                    <State>
+                      <Number>0</Number>
+                      <Text>◄</Text>
+                    </State>
+                    <Pos>7,138</Pos>
+                    <Connection>
+                      <ConfigKey><Variable name="group"/>,rate_temp_down</ConfigKey>
+                      <EmitOnPressAndRelease>true</EmitOnPressAndRelease>
+                      <ButtonState>LeftButton</ButtonState>
+                    </Connection>
+                    <Connection>
+                      <ConfigKey><Variable name="group"/>,rate_temp_down_small</ConfigKey>
+                      <EmitOnPressAndRelease>true</EmitOnPressAndRelease>
+                      <ButtonState>RightButton</ButtonState>
+                    </Connection>
+                  </PushButton>
                 </Children>
               </WidgetGroup><!-- Speed/key controls -->
             </Children>

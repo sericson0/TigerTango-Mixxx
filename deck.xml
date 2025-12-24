@@ -374,30 +374,6 @@
                 <BackPath>style/style_bg_deck_right.png</BackPath>
                 <Children>
                   <PushButton>
-                    <TooltipId>sync_enabled</TooltipId>
-                    <NumberStates>2</NumberStates>
-                    <State>
-                      <Number>0</Number>
-                      <Pressed>skin:/btn/btn_sync_bpm_down.png</Pressed>
-                      <Unpressed>skin:/btn/btn_sync_bpm.png</Unpressed>
-                    </State>
-                    <State>
-                      <Number>1</Number>
-                      <Pressed>skin:/btn/btn_sync_bpm_overdown.png</Pressed>
-                      <Unpressed>skin:/btn/btn_sync_bpm_over.png</Unpressed>
-                    </State>
-                    <Pos>3,15</Pos>
-                    <Connection>
-                      <ConfigKey><Variable name="group"/>,sync_enabled</ConfigKey>
-                      <ButtonState>LeftButton</ButtonState>
-                    </Connection>
-                    <Connection>
-                      <ConfigKey><Variable name="group"/>,beatsync_tempo</ConfigKey>
-                      <ButtonState>RightButton</ButtonState>
-                    </Connection>
-                  </PushButton>
-
-                  <PushButton>
                     <TooltipId>sync_reset_key</TooltipId>
                     <NumberStates>2</NumberStates>
                     <State>

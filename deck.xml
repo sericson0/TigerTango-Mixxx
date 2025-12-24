@@ -79,21 +79,6 @@
                                 <Size>0e,23f</Size>
                                 <Elide>right</Elide>
                               </TrackProperty>
-                              <PushButton>
-                                <TooltipId>eject</TooltipId>
-                                <NumberStates>1</NumberStates>
-                                <State>
-                                  <Number>0</Number>
-                                  <Pressed>skin:/btn/btn_eject_over.png</Pressed>
-                                  <Unpressed>skin:/btn/btn_eject.png</Unpressed>
-                                </State>
-                                <Connection>
-                                  <ConfigKey><Variable name="group"/>,eject</ConfigKey>
-                                  <EmitOnPressAndRelease>true</EmitOnPressAndRelease>
-                                  <ButtonState>LeftButton</ButtonState>
-                                  <ConnectValueToWidget>false</ConnectValueToWidget>
-                                </Connection>
-                              </PushButton>
                             </Children>
                           </WidgetGroup>
 

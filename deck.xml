@@ -283,26 +283,6 @@
                             </Connection>
                           </PushButton>
                           <PushButton>
-                            <TooltipId>slip_mode</TooltipId>
-                            <NumberStates>2</NumberStates>
-                            <State>
-                              <Number>0</Number>
-                              <Pressed>skin:/btn/btn_slip.png</Pressed>
-                              <Unpressed>skin:/btn/btn_slip.png</Unpressed>
-                            </State>
-                            <State>
-                              <Number>1</Number>
-                              <Pressed>skin:/btn/btn_slip_over.png</Pressed>
-                              <Unpressed>skin:/btn/btn_slip_over.png</Unpressed>
-                            </State>
-                            <Pos>43,1</Pos>
-                            <Connection>
-                              <ConfigKey><Variable name="group"/>,slip_enabled</ConfigKey>
-                              <EmitOnPressAndRelease>true</EmitOnPressAndRelease>
-                              <ButtonState>LeftButton</ButtonState>
-                            </Connection>
-                          </PushButton>
-                          <PushButton>
                             <TooltipId>beats_translate_curpos</TooltipId>
                             <NumberStates>1</NumberStates>
                             <State>
@@ -341,24 +321,6 @@
                               <ConfigKey><Variable name="group"/>,quantize</ConfigKey>
                               <EmitOnPressAndRelease>true</EmitOnPressAndRelease>
                               <ButtonState>LeftButton</ButtonState>
-                            </Connection>
-                          </PushButton>
-                          <PushButton>
-                            <TooltipId>keylock</TooltipId>
-                            <NumberStates>2</NumberStates>
-                            <State>
-                              <Number>0</Number>
-                              <Pressed>skin:/btn/btn_keylock.png</Pressed>
-                              <Unpressed>skin:/btn/btn_keylock.png</Unpressed>
-                            </State>
-                            <State>
-                              <Number>1</Number>
-                              <Pressed>skin:/btn/btn_keylock_over.png</Pressed>
-                              <Unpressed>skin:/btn/btn_keylock_over.png</Unpressed>
-                            </State>
-                            <Pos>43,20</Pos>
-                            <Connection>
-                              <ConfigKey><Variable name="group"/>,keylock</ConfigKey>
                             </Connection>
                           </PushButton>
 

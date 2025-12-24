@@ -1,4 +1,4 @@
-/* Shade */
+/* TigerTango */
 #Mixxx {
   background-color: #191919;
   background-repeat:no-repeat;
@@ -60,7 +60,7 @@ WSearchLineEdit QAbstractScrollArea,
 
 WBeatSpinBox,
 /* For some mysterious reason #DlgAutoDJ QSpinBox
-wouldn't style the respective spinbox in Shade (anymore),
+wouldn't style the respective spinbox in TigerTango (anymore),
 that's why we do it in another way here */
 #spinBoxTransition {
   selection-color: #eee;

@@ -388,15 +388,18 @@
                   <ConfigKey>[Master],gain</ConfigKey>
                 </Connection>
               </Knob>
-              <Knob>
-                <TooltipId>balance</TooltipId>
-                <NumberStates>64</NumberStates>
-                <Path>knobs/knob_rotary_s%1.png</Path>
-                <Pos>184,15</Pos>
-                <Connection>
-                  <ConfigKey>[Master],balance</ConfigKey>
-                </Connection>
-              </Knob>
+              <!-- Balance knob removed - always set to middle position (0.0) -->
+              <!-- Cover the "BAL" text label from background image -->
+              <WidgetGroup>
+                <Pos>184,5</Pos>
+                <Size>20f,10f</Size>
+                <Style>
+                  QGroupBox {
+                    background-color: #8d98a3;
+                    border: none;
+                  }
+                </Style>
+              </WidgetGroup>
 
               <!--
               **********************************************

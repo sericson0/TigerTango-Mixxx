@@ -198,7 +198,7 @@
                                       <BindProperty>visible</BindProperty>
                                     </Connection>
                                   </WidgetGroup>
-                                  <Template src="skin:vinylcontrol.xml"/>
+                                  <!-- Vinyl control removed - scratching disabled, Spinny remains visible -->
                                 </Children>
                               </WidgetGroup>
 

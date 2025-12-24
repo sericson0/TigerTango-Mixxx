@@ -79,21 +79,6 @@
                                 <Size>0e,23f</Size>
                                 <Elide>right</Elide>
                               </TrackProperty>
-                              <PushButton>
-                                <TooltipId>eject</TooltipId>
-                                <NumberStates>1</NumberStates>
-                                <State>
-                                  <Number>0</Number>
-                                  <Pressed>skin:/btn/btn_eject_over.png</Pressed>
-                                  <Unpressed>skin:/btn/btn_eject.png</Unpressed>
-                                </State>
-                                <Connection>
-                                  <ConfigKey><Variable name="group"/>,eject</ConfigKey>
-                                  <EmitOnPressAndRelease>true</EmitOnPressAndRelease>
-                                  <ButtonState>LeftButton</ButtonState>
-                                  <ConnectValueToWidget>false</ConnectValueToWidget>
-                                </Connection>
-                              </PushButton>
                             </Children>
                           </WidgetGroup>
 
@@ -282,46 +267,6 @@
                               <ConfigKey><Variable name="group"/>,repeat</ConfigKey>
                             </Connection>
                           </PushButton>
-                          <PushButton>
-                            <TooltipId>slip_mode</TooltipId>
-                            <NumberStates>2</NumberStates>
-                            <State>
-                              <Number>0</Number>
-                              <Pressed>skin:/btn/btn_slip.png</Pressed>
-                              <Unpressed>skin:/btn/btn_slip.png</Unpressed>
-                            </State>
-                            <State>
-                              <Number>1</Number>
-                              <Pressed>skin:/btn/btn_slip_over.png</Pressed>
-                              <Unpressed>skin:/btn/btn_slip_over.png</Unpressed>
-                            </State>
-                            <Pos>43,1</Pos>
-                            <Connection>
-                              <ConfigKey><Variable name="group"/>,slip_enabled</ConfigKey>
-                              <EmitOnPressAndRelease>true</EmitOnPressAndRelease>
-                              <ButtonState>LeftButton</ButtonState>
-                            </Connection>
-                          </PushButton>
-                          <PushButton>
-                            <TooltipId>beats_translate_curpos</TooltipId>
-                            <NumberStates>1</NumberStates>
-                            <State>
-                              <Number>0</Number>
-                              <Pressed>skin:/btn/btn_beatgrid_over.png</Pressed>
-                              <Unpressed>skin:/btn/btn_beatgrid.png</Unpressed>
-                            </State>
-                            <Pos>1,20</Pos>
-                            <Connection>
-                              <ConfigKey><Variable name="group"/>,beats_translate_curpos</ConfigKey>
-                              <EmitOnPressAndRelease>true</EmitOnPressAndRelease>
-                              <ButtonState>LeftButton</ButtonState>
-                            </Connection>
-                            <Connection>
-                              <ConfigKey><Variable name="group"/>,beats_translate_match_alignment</ConfigKey>
-                              <EmitOnPressAndRelease>true</EmitOnPressAndRelease>
-                              <ButtonState>RightButton</ButtonState>
-                            </Connection>
-                          </PushButton>
 
                           <PushButton>
                             <TooltipId>quantize</TooltipId>
@@ -343,24 +288,6 @@
                               <ButtonState>LeftButton</ButtonState>
                             </Connection>
                           </PushButton>
-                          <PushButton>
-                            <TooltipId>keylock</TooltipId>
-                            <NumberStates>2</NumberStates>
-                            <State>
-                              <Number>0</Number>
-                              <Pressed>skin:/btn/btn_keylock.png</Pressed>
-                              <Unpressed>skin:/btn/btn_keylock.png</Unpressed>
-                            </State>
-                            <State>
-                              <Number>1</Number>
-                              <Pressed>skin:/btn/btn_keylock_over.png</Pressed>
-                              <Unpressed>skin:/btn/btn_keylock_over.png</Unpressed>
-                            </State>
-                            <Pos>43,20</Pos>
-                            <Connection>
-                              <ConfigKey><Variable name="group"/>,keylock</ConfigKey>
-                            </Connection>
-                          </PushButton>
 
                         </Children>
                       </WidgetGroup>
@@ -373,30 +300,6 @@
                 <Size>52f,165f</Size>
                 <BackPath>style/style_bg_deck_right.png</BackPath>
                 <Children>
-                  <PushButton>
-                    <TooltipId>sync_enabled</TooltipId>
-                    <NumberStates>2</NumberStates>
-                    <State>
-                      <Number>0</Number>
-                      <Pressed>skin:/btn/btn_sync_bpm_down.png</Pressed>
-                      <Unpressed>skin:/btn/btn_sync_bpm.png</Unpressed>
-                    </State>
-                    <State>
-                      <Number>1</Number>
-                      <Pressed>skin:/btn/btn_sync_bpm_overdown.png</Pressed>
-                      <Unpressed>skin:/btn/btn_sync_bpm_over.png</Unpressed>
-                    </State>
-                    <Pos>3,15</Pos>
-                    <Connection>
-                      <ConfigKey><Variable name="group"/>,sync_enabled</ConfigKey>
-                      <ButtonState>LeftButton</ButtonState>
-                    </Connection>
-                    <Connection>
-                      <ConfigKey><Variable name="group"/>,beatsync_tempo</ConfigKey>
-                      <ButtonState>RightButton</ButtonState>
-                    </Connection>
-                  </PushButton>
-
                   <PushButton>
                     <TooltipId>sync_reset_key</TooltipId>
                     <NumberStates>2</NumberStates>

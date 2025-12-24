@@ -3,7 +3,7 @@
     <BackPath>style/style_bg_deck_pane.png</BackPath>
     <Layout>vertical</Layout>
     <Children>
-      <WidgetGroup><!-- Hotcues 1-8 -->
+      <WidgetGroup><!-- Hotcues 1-4 -->
         <Layout>horizontal</Layout>
         <Children>
             <WidgetGroup><Size>0e,0e</Size></WidgetGroup>
@@ -21,22 +21,6 @@
             <WidgetGroup><Size>1f,0e</Size></WidgetGroup>
           <Template src="skin:hotcue_button.xml">
             <SetVariable name="hotcue">4</SetVariable>
-          </Template>
-            <WidgetGroup><Size>1f,0e</Size></WidgetGroup>
-          <Template src="skin:hotcue_button.xml">
-            <SetVariable name="hotcue">5</SetVariable>
-          </Template>
-            <WidgetGroup><Size>1f,0e</Size></WidgetGroup>
-          <Template src="skin:hotcue_button.xml">
-            <SetVariable name="hotcue">6</SetVariable>
-          </Template>
-            <WidgetGroup><Size>1f,0e</Size></WidgetGroup>
-          <Template src="skin:hotcue_button.xml">
-            <SetVariable name="hotcue">7</SetVariable>
-          </Template>
-            <WidgetGroup><Size>1f,0e</Size></WidgetGroup>
-          <Template src="skin:hotcue_button.xml">
-            <SetVariable name="hotcue">8</SetVariable>
           </Template>
             <WidgetGroup><Size>5f,0e</Size></WidgetGroup>
         </Children>

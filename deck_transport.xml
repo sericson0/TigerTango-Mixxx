@@ -67,30 +67,6 @@
         </Connection>
       </PushButton>
 
-        <!--
-      **********************************************
-      Button- Fast forward and rewind
-      **********************************************
-      -->
-      <PushButton>
-        <Size>54f,14f</Size>
-        <Pos>101,0</Pos>
-        <NumberStates>2</NumberStates>
-        <State>
-          <Number>0</Number>
-          <Pressed>skin:/btn/btn_seek_plus.png</Pressed>
-          <Unpressed>skin:/btn/btn_seek_plus.png</Unpressed>
-        </State>
-        <State>
-          <Number>1</Number>
-          <Pressed>skin:/btn/btn_seek_minus.png</Pressed>
-          <Unpressed>skin:/btn/btn_seek_minus.png</Unpressed>
-        </State>
-        <Connection>
-          <ConfigKey>[Skin],show_loop_beatjump_controls</ConfigKey>
-        </Connection>
-      </PushButton>
-
       <PushButton>
         <TooltipId>beatjump_forward</TooltipId>
         <NumberStates>1</NumberStates>

@@ -261,38 +261,6 @@
       </PushButton>
 
       <!--
-      ****************************************
-      Button- Reverse playback & Censor
-      ****************************************
-      -->
-      <PushButton>
-        <TooltipId>reverse</TooltipId>
-        <NumberStates>2</NumberStates>
-        <LeftClickIsPushButton>true</LeftClickIsPushButton>
-        <State>
-          <Number>0</Number>
-          <Pressed>skin:/btn/btn_reverse_overdown.png</Pressed>
-          <Unpressed>skin:/btn/btn_reverse.png</Unpressed>
-        </State>
-        <State>
-          <Number>1</Number>
-          <Pressed>skin:/btn/btn_reverse_overdown.png</Pressed>
-          <Unpressed>skin:/btn/btn_reverse_over.png</Unpressed>
-        </State>
-        <Pos>101,35</Pos>
-        <Connection>
-          <ConfigKey>[Channel<Variable name="channum"/>],reverse</ConfigKey>
-          <EmitOnPressAndRelease>true</EmitOnPressAndRelease>
-          <ButtonState>LeftButton</ButtonState>
-        </Connection>
-        <Connection>
-          <ConfigKey>[Channel<Variable name="channum"/>],reverseroll</ConfigKey>
-          <EmitOnPressAndRelease>true</EmitOnPressAndRelease>
-          <ButtonState>RightButton</ButtonState>
-        </Connection>
-      </PushButton>
-
-      <!--
       **********************************************
       Button- Looping
       **********************************************

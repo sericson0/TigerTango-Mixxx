@@ -378,26 +378,6 @@
 
             <WidgetGroup><Size>0min,2f</Size></WidgetGroup>
 
-            <WidgetGroup>
-              <SizePolicy>me,min</SizePolicy>
-              <Layout>horizontal</Layout>
-              <Children>
-                <WidgetGroup>
-                  <ObjectName>EffectLeftBorder</ObjectName>
-                  <Size>3f,43f</Size>
-                </WidgetGroup>
-                <Template src="skin:looping.xml">
-                  <SetVariable name="channum">1</SetVariable>
-                </Template>
-                <Template src="skin:looping.xml">
-                  <SetVariable name="channum">2</SetVariable>
-                </Template>
-              </Children>
-              <Connection>
-                <ConfigKey>[Skin],show_loop_beatjump_controls</ConfigKey>
-                <BindProperty>visible</BindProperty>
-              </Connection>
-            </WidgetGroup>
             <Template src="skin:effectrow.xml"/>
             <Template src="skin:srcrow.xml"/>
 

@@ -267,26 +267,6 @@
                               <ConfigKey><Variable name="group"/>,repeat</ConfigKey>
                             </Connection>
                           </PushButton>
-                          <PushButton>
-                            <TooltipId>beats_translate_curpos</TooltipId>
-                            <NumberStates>1</NumberStates>
-                            <State>
-                              <Number>0</Number>
-                              <Pressed>skin:/btn/btn_beatgrid_over.png</Pressed>
-                              <Unpressed>skin:/btn/btn_beatgrid.png</Unpressed>
-                            </State>
-                            <Pos>1,20</Pos>
-                            <Connection>
-                              <ConfigKey><Variable name="group"/>,beats_translate_curpos</ConfigKey>
-                              <EmitOnPressAndRelease>true</EmitOnPressAndRelease>
-                              <ButtonState>LeftButton</ButtonState>
-                            </Connection>
-                            <Connection>
-                              <ConfigKey><Variable name="group"/>,beats_translate_match_alignment</ConfigKey>
-                              <EmitOnPressAndRelease>true</EmitOnPressAndRelease>
-                              <ButtonState>RightButton</ButtonState>
-                            </Connection>
-                          </PushButton>
 
                           <PushButton>
                             <TooltipId>quantize</TooltipId>

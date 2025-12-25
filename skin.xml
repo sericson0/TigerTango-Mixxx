@@ -57,7 +57,10 @@
       <attribute persist="true" config_key="[Skin],show_loop_beatjump_controls">0</attribute>
       <attribute persist="true" config_key="[Skin],show_intro_outro_cues">1</attribute>
       <!--Set crossfader to middle position (0.5) - crossfader slider removed from UI-->
-      <attribute persist="true" config_key="[Master],crossfader">0.5</attribute>
+      <!-- <attribute persist="true" config_key="[Master],crossfader">0.5</attribute> -->
+      <!--Set crossfader assignment: Deck 1 to left (0), Deck 2 to right (2)-->
+      <attribute persist="true" config_key="[Channel1],crossfader_assign">0</attribute>
+      <attribute persist="true" config_key="[Channel2],crossfader_assign">2</attribute>
       <!--Set balance to middle position (0.0) - balance knob removed from UI-->
       <attribute persist="true" config_key="[Master],balance">0.0</attribute>
 

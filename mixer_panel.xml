@@ -388,18 +388,7 @@
                   <ConfigKey>[Master],gain</ConfigKey>
                 </Connection>
               </Knob>
-              <!-- Balance knob removed - always set to middle position (0.0) -->
-              <!-- Cover the "BAL" text label from background image -->
-              <WidgetGroup>
-                <Pos>184,5</Pos>
-                <Size>20f,10f</Size>
-                <Style>
-                  QGroupBox {
-                    background-color: #8d98a3;
-                    border: none;
-                  }
-                </Style>
-              </WidgetGroup>
+    
 
               <!--
               **********************************************
@@ -454,15 +443,7 @@
               RotaryFader- Channel filter and gain
               **********************************************
               -->
-              <Knob>
-                <TooltipId>pregain</TooltipId>
-                <NumberStates>64</NumberStates>
-                <Path>knobs/knob_rotary_s%1.png</Path>
-                <Pos>32,47</Pos>
-                <Connection>
-                  <ConfigKey>[Channel1],pregain</ConfigKey>
-                </Connection>
-              </Knob>
+
               <EffectParameterKnob>
                 <EffectUnitGroup>[EqualizerRack1_[Channel1]]</EffectUnitGroup>
                 <Effect>1</Effect>
@@ -509,15 +490,18 @@
                 </Connection>
               </EffectParameterKnob>
 
-              <Knob>
-                <TooltipId>pregain</TooltipId>
-                <NumberStates>64</NumberStates>
-                <Path>knobs/knob_rotary_s%1.png</Path>
-                <Pos>197,47</Pos>
-                <Connection>
-                  <ConfigKey>[Channel2],pregain</ConfigKey>
-                </Connection>
-              </Knob>
+              <!-- Cover the "GAIN" text label from background image for Channel2 -->
+              <WidgetGroup>
+                <Pos>190,40</Pos>
+                <Size>20f,10f</Size>
+                <Style>
+                  QGroupBox {
+                    background-color: #8d98a3;
+                    border: none;
+                  }
+                </Style>
+              </WidgetGroup>
+              <!-- Pregain knob removed for Channel2 -->
               <EffectParameterKnob>
                 <EffectUnitGroup>[EqualizerRack1_[Channel2]]</EffectUnitGroup>
                 <Effect>1</Effect>

@@ -102,26 +102,6 @@
         </Connection>
       </Knob>
 
-      <PushButton>
-        <TooltipId>EffectUnit_mix_mode</TooltipId>
-        <NumberStates>2</NumberStates>
-        <State>
-          <Number>0</Number>
-          <Pressed>skin:/btn/btn_fxmix_d-w.svg</Pressed>
-          <Unpressed>skin:/btn/btn_fxmix_d-w.svg</Unpressed>
-        </State>
-        <State>
-          <Number>1</Number>
-          <Pressed>skin:/btn/btn_fxmix_d+w.svg</Pressed>
-          <Unpressed>skin:/btn/btn_fxmix_d+w.svg</Unpressed>
-        </State>
-        <Size>20f,9f</Size>
-        <Pos>52,46</Pos>
-        <Connection>
-          <ConfigKey>[EffectRack1_EffectUnit<Variable name="effectunitnum"/>],mix_mode</ConfigKey>
-        </Connection>
-      </PushButton>
-
       <WidgetGroup>
         <Size>29f,5f</Size>
         <Pos>76,14</Pos>

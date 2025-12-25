@@ -300,30 +300,6 @@
                 <Size>52f,165f</Size>
                 <BackPath>style/style_bg_deck_right.png</BackPath>
                 <Children>
-                  <PushButton>
-                    <TooltipId>sync_reset_key</TooltipId>
-                    <NumberStates>2</NumberStates>
-                    <State>
-                      <Number>0</Number>
-                      <Pressed>skin:/btn/btn_sync_key_down.png</Pressed>
-                      <Unpressed>skin:/btn/btn_sync_key.png</Unpressed>
-                    </State>
-                    <State>
-                      <Number>1</Number>
-                      <Pressed>skin:/btn/btn_sync_key_overdown.png</Pressed>
-                      <Unpressed>skin:/btn/btn_sync_key_over.png</Unpressed>
-                    </State>
-                    <Pos>27,15</Pos>
-                    <Connection>
-                      <ConfigKey><Variable name="group"/>,sync_key</ConfigKey>
-                      <ButtonState>LeftButton</ButtonState>
-                    </Connection>
-                    <Connection>
-                      <ConfigKey><Variable name="group"/>,reset_key</ConfigKey>
-                      <ButtonState>RightButton</ButtonState>
-                    </Connection>
-                  </PushButton>
-
 
                   <WidgetGroup>
                     <Pos>3,30</Pos>
